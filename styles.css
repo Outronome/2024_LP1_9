@@ -10,14 +10,14 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #fff;
     margin: 0;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color:#fff ;
+    color: #333;
     padding: 1rem;
     text-align: center;
 }
@@ -59,14 +59,111 @@ nav ul li a:hover {
 }
 
 /* Conteúdo principal */
-main {
+main{
+    margin-left: 12.5%;
+    margin-right: 12.5%;
     padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-
+video{
+    width: 50%;
+    height: 30%;
+}
 main h2 {
     color: #444;
     margin-bottom: 0.5rem;
 }
+h2{
+    text-align: center;
+}
 
-main p, main ul {
-    margin-bottom
+/* Estilos para a container */
+.container {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para os cards */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Estilo para os títulos e conteúdo */
+.card h2 {
+    font-size: 1.8em;
+    color: #007aff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.2em;
+    color: #555;
+}
+embed{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 100vh;
+    height: 42.9vh;
+    margin:0 auto;
+    display: block;
+}
+/* Detalhes (expandir) */
+details {
+    padding: 10px;
+}
+
+summary {
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    color: #007aff;
+    padding: 5px 0;
+}
+
+/* Quando o summary é clicado, muda a cor */
+summary:hover {
+    color: #005bb5;
+}
+
+/* Estilo para o conteúdo dentro de details */
+.section-content {
+    padding-top: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Adicionando transição suave para o conteúdo */
+.section-content {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-out, height 0.3s ease-out;
+}
+
+/* Quando details estiver aberto, o conteúdo fica visível */
+details[open] > .section-content {
+    opacity: 1;
+    height: auto; /* Permite que o conteúdo se expanda conforme necessário */
+}
+
+
+::-webkit-scrollbar-track { 
+    background-color: #F4F4F4; 
+} 
+::-webkit-scrollbar {
+width: 6px; background: #F4F4F4; 
+} 
+::-webkit-scrollbar-thumb {
+    background: #dad7d7; 
+}
+
