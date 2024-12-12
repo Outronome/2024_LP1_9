@@ -68,6 +68,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    align-items: center;
 }
 
 nav ul li a {
@@ -194,7 +195,6 @@ main p{
   .card_hist h2 {
     text-align: center;
     margin: 1.3rem;
-    color: white;
   }
   card_hist p{
     text-align: justify;
@@ -215,9 +215,6 @@ main p{
     .container {
         grid-template-columns: 1fr;
     }
-
-    
-
     nav ul {
         display: block;
     }
@@ -286,6 +283,7 @@ embed {
 /* Alternância de tema */
 .theme-switch {
     display: flex;
+    align-items: center;
     justify-content: center;
     direction: rtl;
 }
@@ -353,10 +351,10 @@ embed {
 
 /* The switch - the box around the slider */
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
 /* Hide default HTML checkbox */
