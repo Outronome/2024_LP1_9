@@ -148,7 +148,6 @@ main p{
     gap: 5px;
     align-self: flex-start;
   }
-
   .red {
     width: 10px;
     height: 10px;
@@ -368,6 +367,12 @@ input:checked + .slider:before {
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
+}
+
+.card .fundadores {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;     
 }
 .slider.round:before {
   border-radius: 50%;
