@@ -1,53 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>História da Apple</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Apple</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/script.js"></script>
+    <meta name="author" content="Rafael Ferraria">
 </head>
-<body>
+<body class="light-theme">
+    
+    <div id="top"></div>
     <header>
-        <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Logo da Apple">
-        </div>
-        <h1>História da Apple</h1>
+        <article class="logo">
+            <section>
+                <img src="assets/img/logo.webp" alt="Logotipo da Apple">
+            </section>
+            <section>
+                <h1>Apple</h1>
+            </section>
+        </article>
+        <article>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="fundadores.html">Fundadores</a>
+                    </li>
+                    <li>
+                        <a href="historia_marca.html">História da Marca</a>
+                    </li>
+                    <li>
+                        <a href="historia_so.html">História dos Sistemas Operativos</a>
+                    </li>
+                    <li>
+                        <article class="theme-switch">
+                            <input type="checkbox" onchange="toggleTheme()" id="theme-checkbox" />
+                            <label for="theme-checkbox">
+                                <div></div>
+                                <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    class="w-6 h-6"
+                                >
+                                    <path
+                                    fill-rule="evenodd"
+                                    d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                                    clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                </span>
+                                <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    class="w-6 h-6"
+                                >
+                                    <path
+                                    d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                                    ></path>
+                                </svg>
+                                </span>
+                            </label>
+                        </article>   
+                    </li>
+                </ul>
+            </nav>
+        </article> 
     </header>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#fundacao">Fundação</a></li>
-            <li><a href="#produtos">Principais Produtos</a></li>
-            <li><a href="#legado">Legado</a></li>
-        </ul>
-    </nav>
     <main>
-        <section id="inicio">
-            <h2>Início</h2>
-            <p>A Apple Inc. foi fundada em 1º de abril de 1976 por Steve Jobs, Steve Wozniak e Ronald Wayne, com o objetivo de desenvolver e comercializar computadores pessoais.</p>
-        </section>
-        <section id="fundacao">
-            <h2>Fundação</h2>
-            <p>O primeiro produto da Apple foi o Apple I, projetado por Wozniak. Foi vendido como uma placa-mãe, sem teclado ou monitor.</p>
-        </section>
-        <section id="produtos">
-            <h2>Principais Produtos</h2>
-            <ul>
-                <li>Apple II (1977)</li>
-                <li>Macintosh (1984)</li>
-                <li>iPod (2001)</li>
-                <li>iPhone (2007)</li>
-                <li>iPad (2010)</li>
-                <li>Apple Watch (2015)</li>
-            </ul>
-        </section>
-        <section id="legado">
-            <h2>Legado</h2>
-            <p>A Apple é conhecida por sua inovação tecnológica e design revolucionário, transformando a forma como usamos a tecnologia no dia a dia.</p>
-        </section>
+        <div>
+            <section>
+                <div>
+                    <h2>Visão e Filosofia da Apple</h2>
+                    <p>
+                        <strong>Inovação: </strong>A Apple é conhecida por seu foco em inovação e design.<br>
+                        <strong>Simples e Intuitivo: </strong>A filosofia de criar produtos fáceis de usar e elegantes.<br>
+                        <strong>Sustentabilidade e Responsabilidade Social: </strong>Os esforços da Apple em tornar-se mais sustentável e as suas constantes iniciativas em responsabilidade social.
+                    </p>
+                </div>
+                <div>
+                    <embed src="https://www.youtube.com/embed/nx2u8iUpzPo?si=k2pZyVMEpKfhIGVf">
+                </div>
+            </section>
+            <section>
+                <h2 id="titulo">Principais Produtos</h2>
+                <div class="container">
+                    <article class="card">
+                        <section>
+                            <img src="assets/img/apple-1.jpg" alt="Apple_I">
+                        </section>
+                        <section class="content">
+                            <h3 class="title">Apple I (1976)</h3>
+                            <p class="description">
+                                O primeiro computador pessoal criado por Steve Jobs, Steve Wozniak e Ronald Wayne. Ele foi vendido como um kit para ser montado pelos utilizadores e marcou o início da Apple.
+                            </p>
+                        </section>
+                    </article>
+                    <article class="card">
+                        <section>
+                            <img src="assets/img/apple_II.png" alt="Apple_II">
+                        </section>
+                        <section class="content">
+                            <h3 class="title">Apple II (1977)</h3>
+                            <p class="description">
+                                Um dos primeiros computadores pessoais de sucesso comercial da Apple. Ele tornou-se um ícone dos anos 1970 e 1980.
+                            </p>
+                        </section>
+                    </article>
+                    <article class="card">
+                        <section>
+                            <img src="assets/img/macintosh.webp" alt="Macintosh">
+                        </section>
+                        <section class="content">
+                            <h3 class="title">Macintosh (1984)</h3>
+                            <p class="description">
+                                O primeiro Mac a ser comercializado, que revolucionou a computação com sua interface gráfica, mouse e design compacto. Foi um marco na popularização dos computadores pessoais.
+                            </p>
+                        </section>
+                    </article>
+                    <article class="card">
+                        <section>
+                            <img src="assets/img/ipod.png" alt="Ipod">
+                        </section>
+                        <section class="content">
+                            <h3 class="title">IPod (2001)</h3>
+                            <p class="description">
+                                O dispositivo que transformou a indústria da música. O IPod introduziu o conceito de armazenamento digital de música, um grande passo para a Apple se tornar a gigante de entretenimento que é hoje.
+                            </p>
+                        </section>
+                    </article>
+                    <article class="card">
+                        <section>
+                            <img src="assets/img/iphone.jpg" alt="IPhone">
+                        </section>
+                        <section class="content">
+                            <h3 class="title">IPhone (2007)</h3>
+                            <p class="description">
+                                Lançado por Steve Jobs, o IPhone combinou um telefone, um IPod e um computador num dispositivo, redefinindo a indústria de smartphones e estabelecendo novos padrões de design e funcionalidade.
+                            </p>
+                        </section>
+                    </article>
+                    <article class="card">
+                        <section>
+                            <img src="assets/img/mackbookair.webp" alt="MackBoock Air">
+                        </section>
+                        <section class="content">
+                            <h3 class="title">MackBoock Air (2008)</h3>
+                            <p class="description">
+                                Um dos primeiros portáteis ultrafinos do mundo, o MacBook Air foi aclamado por seu design minimalista e leve, mudando o paradigma dos computadores portáteis.
+                            </p>
+                        </section>
+                    </article>
+                    <article class="card">
+                        <section>
+                            <img src="assets/img/ipad.webp" alt="Ipad">
+                        </section>
+                        <section class="content">
+                            <h3 class="title">iPad (2010)</h3>
+                            <p class="description">
+                                O tablet da Apple trouxe a computação portátil a um novo nível, criando um mercado totalmente novo e se tornando um dos dispositivos mais populares da marca.
+                            </p>
+                        </section>
+                    </article>
+                    <article class="card">
+                        <section>
+                            <img src="assets/img/watch.jpg" alt="Apple Watch">
+                        </section>
+                        <section class="content">
+                            <h3 class="title">Apple Watch (2015)</h3>
+                            <p class="description">
+                                O Apple Watch foi um dos primeiros smartwatches a ser adotado em massa, trazendo recursos de controlo da saúde, notificações e integração com o IPhone.
+                            </p>
+                        </section>
+                    </article>
+                    <article class="card">
+                        <section>
+                            <img src="assets/img/apple-vision-pro.jpg" alt="Apple Vision Pro">
+                        </section>
+                        <section class="content">
+                            <h3 class="title">Apple Vision Pro (2024)</h3>
+                            <p class="description">
+                                O mais recente produto da Apple, um headset de realidade mista (aumentada e virtual) que promete transformar a forma como interagimos com o mundo digital, marcando a entrada da Apple no universo de realidade aumentada.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <button class="btn" onclick="scrollToTop()"></button>
     </main>
     <footer>
-        <p>&copy; 2024 História da Apple. Todos os direitos reservados.</p>
+        <article>
+            <p>&copy; 2024 - 2025 História da Apple. Todos os direitos reservados.</p>
+            <p>Trabalho Desenvolvido pelo Grupo 9 </p>
+        </article>
     </footer>
 </body>
 </html>
+
+
